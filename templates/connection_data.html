@@ -1,0 +1,26 @@
+<div class='container'>
+    <form action="get_connection_data" method = "POST">
+        <p>Page Number<input type = "number" name = "pageno" /></p>
+        <a href=# id=get_data_button><button class='btn btn-default'>Get Data</button></a>
+    </form>
+</div>
+
+<body>
+    <h1>Connection Data</h1>
+    {{data}}
+    
+    <!-- <pre>
+        <code id="yourCode">
+        </code>
+    </pre>
+    <script>
+        let data = '{{data}}'
+        // data = data.substring(1, data.length() - 1)
+        // data = JSON.parse(data)
+        let text = "";
+        for (let i = 0; i < data.length; i++) {
+        text += JSON.stringify(data[i]) + "<br>";
+        }
+        document.getElementById("yourCode").innerHTML = text;
+    </script> -->
+</body>
